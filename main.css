@@ -86,12 +86,34 @@ body {
   text-align: center;
   color: white
 }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 400%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .personalportfolio {
   height: 50px;
   width: 600px;
   text-align: center;
   color:white;
   font-size: 32px;
+}
+@keyframes slideind {
+  from {
+    margin-right: 100%;
+    width: 400%; 
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 .bottommenu {
   height: 100px;
@@ -110,7 +132,8 @@ body {
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8px
+  padding-top: 8px;
+  margin-bottom: 35px
 }
 .line {
   width:3px;
@@ -124,13 +147,10 @@ body {
   border-right: 10px solid transparent;
   border-top: 10px solid white;
 }
-@media(max-width: 650px) {
-    .navbar {
-      
-    }
+@media(max-width: 600px) {
     .hamburgermenu {
       display: block;
-      margin:25px
+      margin-left:33px
     }
     .home {
       display: none
@@ -154,3 +174,12 @@ body {
       margin-right: 25px
     }
 }
+.your {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+.personalportfolio {
+  animation-duration: 6s;
+  animation-name: slideind;
+}
+
